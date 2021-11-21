@@ -1,0 +1,604 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ============================================= */
+/* -------------- FORMATTING TEXT -------------- */
+/* ============================================= */
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+  color: #dddd;
+}
+
+h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #dddd;
+}
+
+p,a {
+  font-size: 1.2em;
+  color: #dddd;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+#dynamic-text::before {
+  content: "";
+  animation: animate infinite 30s;
+}
+
+@keyframes animate {
+  0% {
+    content: 'Frontend Developer'
+  }
+  20%{
+    content: 'UI/UX Deigner';
+  }
+  40% {
+    content: 'Frontend Developer'
+  }
+  60%{
+    content: 'UI/UX Deigner';
+  }
+  80%{
+    content: 'Frontend Developer'
+  }
+  100%{
+    content: 'UI/UX Developer'
+  }
+}
+/* ============================================= */
+/* ----------- END OF FORMATTING TEXT ---------- */
+/* ============================================= */
+
+
+
+/* ============================================= */
+/* -------------- FORMATTING HTML -------------- */
+/* ============================================= */
+html, body {
+  max-width: 100%;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+
+
+/* ============================================= */
+/* ------------------ HEDAER ------------------- */
+/* ============================================= */
+
+/* ------------------- NAVBAR -------------------*/
+.navbar {
+  padding: 20px 10px;
+}
+
+.navbar img {
+  border-radius: 30px;
+}
+
+.navbar-nav {
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2em;
+}
+
+.nav > li:hover{
+  background-color:rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon {
+  box-shadow: none;
+  border: none;
+}
+/* --------------- END OF NAVBAR ----------------*/
+
+/* ============================================= */
+/*-------------- END OF HEDAER ---------------- */
+/* ============================================= */
+
+
+
+/* ============================================= */
+/* ------------------- SECTION ----------------- */
+/* ============================================= */
+section, .d-flex {
+  height: 100vh;
+  margin-bottom:50px;
+}
+
+/* ---------------- HOME SECTION --------------- */
+.img-home {
+  background: linear-gradient(#0000000c, #0000000c), url(../image/Profil.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.content-home,
+.content-about {
+  width:58%;
+}
+/* ------------- END OF HOME SECTION ----------- */
+
+/* --------------- ABOUT SECTION --------------- */
+.img-about {
+  background: linear-gradient(#0000000c, #0000000c), url(https://cdn.statically.io/img/i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.about {
+  align-items: flex-end;
+}
+/* --------------- ABOUT SECTION --------------- */
+
+/* -------------- SKILLS SECTION --------------- */
+.accordion-item {
+  background-color: #0e0e0e;
+}
+
+.progress {
+  margin: 4px 0 16px;
+}
+
+#collapseOne {
+  color: #dddd;
+}
+/* ------------ END OF SKILLS SECTION ----------- */
+
+/* ------------- SERVICES SECTION --------------- */
+.services {
+  position: absolute;
+  z-index: 1;
+  align-items: flex-start;
+  margin-left: 40%;
+}
+
+.img-services-1 {
+  background: linear-gradient(#0000000c, #0000000c), url(../image/Profil.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.img-services-2 {
+  background: linear-gradient(#0000000c, #0000000c), url(https://cdn.statically.io/img/i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.img-services-3 {
+  background: linear-gradient(#0000000c, #0000000c), url(https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers/413842.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ---------- END OF SERVICES SECTION ------------ */
+
+
+.content-contact {
+  width:50%;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #0e0e0e;
+  border: 2px solid gray;
+  outline: none;
+  color:#dddd;
+  box-shadow: none;
+  max-height: 100px;
+  border-radius: 15px;
+}
+
+textarea {
+  outline: none;
+  color:#dddd;
+  box-shadow: none;
+}
+
+#cta{
+  cursor: pointer; position: absolute;
+}
+
+#cta .arrow{left: 30%;}
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:15px;}
+.segunda{margin-left: 8px;}
+.next {
+background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+0% {opacity: 1; transform: translateX(0px) scale(1);}
+25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-delay:0.2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+.round:hover .arrow{
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+.round:hover .arrow.primera{
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-delay:0.2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+
+/* PC */
+@media (min-width: 1200px) {
+  #carouselExampleCaptionss {
+    visibility: hidden;
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  /* ============================================= */
+  /* -------------- FORMATTING TEXT -------------- */
+  /* ============================================= */
+  h1 {
+    font-size: 4.5em;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 4em;
+    font-weight: 600;
+  }
+
+  p,a {
+    font-size: 1.27em;
+  }
+
+  i {
+    color: #dddd;
+  }
+
+  i:hover {
+    color: white;
+  }
+  /* ============================================= */
+  /* ---------- END OF FORMATTING TEXT ----------- */
+  /* ============================================= */
+
+
+
+  /* ============================================= */
+  /* ------------------ NAVBAR ------------------- */
+  /* ============================================= */
+  .navbar {
+    background-color: black;
+  }
+  /* ============================================= */
+  /* -------------- END OF NAVBAR ---------------- */
+  /* ============================================= */
+
+
+
+  /* ============================================= */
+  /* ------------------- SECTION ----------------- */
+  /* ============================================= */
+  section {
+    margin-bottom: 10px;
+  }
+
+  /* ---------------- HOME SECTION --------------- */
+  .img-home {
+    background: linear-gradient(#00000070, #00000070), url(../image/Profil.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .content-home {
+    width: 100%;
+  }
+  /* ------------- END OF HOME SECTION ----------- */
+
+  /* --------------- ABOUT SECTION --------------- */
+  .img-about {
+    background: linear-gradient(#00000070, #00000070), url(https://cdn.statically.io/img/i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .about {
+    align-items: flex-start;
+  }
+
+  .content-about {
+    width: 100%;
+  }
+  /* ----------- END OF ABOUT SECTION ------------ */
+
+
+  /* ------------- SERVICES SECTION -------------- */
+  .img-services {
+    background: linear-gradient(#00000070, #00000070), url(https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers/413842.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  /* ---------- END OF SERVICES SECTION ---------- */
+
+  
+
+  .img-1 {
+    background: linear-gradient(rgba(5, 5, 5, 0.219), #0000007e), url(../image/Profil.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .content {
+    width:100%;
+  }
+
+  .slide-services {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================= */
+/* -------------------- TAB -------------------- */
+/* ============================================= */
+@media (max-width:991px) {
+
+  /* ============================================= */
+  /* -------------- FORMATTING TEXT -------------- */
+  /* ============================================= */
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p,a {
+    font-size: 1em;
+  }
+
+  i {
+    color: #dddd;
+  }
+
+  i:hover {
+    color: white;
+  }
+  /* ============================================= */
+  /* ---------- END OF FORMATTING TEXT ----------- */
+  /* ============================================= */
+
+
+
+  /* ============================================= */
+  /* ------------------ NAVBAR ------------------- */
+  /* ============================================= */
+  .navbar {
+    background-color: black;
+    padding: 5px 0;
+  }
+  /* ============================================= */
+  /* -------------- END OF NAVBAR ---------------- */
+  /* ============================================= */
+
+
+
+  /* ============================================= */
+  /* ------------------- SECTION ----------------- */
+  /* ============================================= */
+  section {
+    margin: 0;
+  }
+
+  /* ---------------- HOME SECTION --------------- */
+  .img-home {
+    background: linear-gradient(#00000070, #00000070), url(../image/Profil.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  /* ------------- END OF HOME SECTION ----------- */
+
+  /* --------------- ABOUT SECTION --------------- */
+  .img-about {
+    background: linear-gradient(#00000070, #00000070), url(https://cdn.statically.io/img/i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  .about {
+    align-items: flex-start;
+  }
+  /* ----------- END OF ABOUT SECTION ------------ */
+
+
+  /* ------------- SERVICES SECTION -------------- */
+  .img-services {
+    background: linear-gradient(#00000070, #00000070), url(https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers/413842.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  /* ---------- END OF SERVICES SECTION ---------- */
+
+
+  .content-skill {
+    width:100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    background-color: black;
+  }
+
+  .navbar i{
+    color: white;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p,a {
+    font-size: .9em;
+  }
+
+  .content-contact {
+    width:100%;
+  }
+
+  .lol {
+    width: 100vw;
+    background-color: red;
+    height: 50vh;
+  }
+
+
+  h5 {
+    font-size: .85em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .progress {
+    margin: 2px 0 14px;
+  }
+
+  .progress,
+  .progress-bar {
+    height: 10px;
+  }
+}
+
+@media (max-width: 437px) {
+  .navbar {
+    background-color: black;
+  }
+
+  .navbar i{
+    color: white;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p,a {
+    font-size: .77em;
+  }
+
+  .content {
+    margin-top: 10px;
+  }
+
+  h5 {
+    font-size: .7em;
+  }
+
+  h3 {
+    font-size: .8em;
+  }
+
+  .progress {
+    margin: 3px 0 13px;
+  }
+
+  .progress,
+  .progress-bar {
+    height: 8px;
+  }
+}
+
+/* ============================================= */
+/* ----------- END OF FORMATTING TEXT ---------- */
+/* ============================================= */

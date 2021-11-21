@@ -1,0 +1,235 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  max-width: 100%;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+}
+
+h1, h2 {
+  font-size: 4em;
+  color: #eeee;
+}
+
+p {
+  font-size: 1em;
+  color: #eeee;
+}
+
+a {
+  color: #eeee;
+  text-decoration: none;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none;
+  box-shadow: none;
+}
+
+#navbarNav {
+  justify-content: end;
+}
+
+.title {
+  display: inline-block;
+}
+
+#dynamic-text::before {
+  content: "";
+  animation: animate infinite 30s;
+}
+
+@keyframes animate {
+  0% {
+    content: 'Frontend Developer'
+  }
+  20%{
+    content: 'UI/UX Deigner';
+  }
+  40% {
+    content: 'Frontend Developer'
+  }
+  60%{
+    content: 'UI/UX Deigner';
+  }
+  80%{
+    content: 'Frontend Developer'
+  }
+  100%{
+    content: 'UI/UX Developer'
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+  #mobile-device {
+    display: none;
+  }
+
+  img {
+    height: 100vh;
+    width: 50vw;
+    float:right;
+    object-fit: cover;
+    display: block;
+    background-position: center;
+  }
+
+  main .position-absolute,
+  main .d-flex {
+    height: 100vh;
+    position: initial;
+  }
+
+  .more {
+    margin-top: 70px;
+  }
+
+  .accordion {
+    width: 46%;
+  }
+
+  .accordion-item {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .accordion-body {
+    background-color: #0e0e0e;
+    color: #eeee;
+  }
+
+  .img-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.089), #0000007a),url(https://avatars.githubusercontent.com/u/75709880?v=);
+    background-position: center;
+    height: 100vh;
+    width: 50vw;
+    float:right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .img-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.089), #0000007a),url(https://cdn.statically.io/img/i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 50vw;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .img-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.089), #0000007a),url(https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers/413842.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 50vw;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main .controller .mobile .carousel-control-prev, main .controller .mobile .carousel-control-next {
+    display: none;
+  }
+  
+  .controller .desktop {
+    position: absolute;
+    z-index: 99;
+    margin-left: 35px;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  main .main-content {
+    display: flex;
+    position: absolute;
+    /* background-color: rebeccapurple; */
+    top:0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    z-index: 98;
+    color: whitesmoke;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    background-color: black;
+  }
+  /* section {
+    display: none;
+  } */
+  .img-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.089), #0000007a),url(https://avatars.githubusercontent.com/u/75709880?v=4);
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .img-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.089), #0000007a),url(https://cdn.statically.io/img/i.pinimg.com/originals/33/b5/96/33b596755706c28cb85e041d8deeb7df.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .img-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.089), #0000007a),url(https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers/413842.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main .controller .desktop .carousel-control-prev, main .controller .desktop .carousel-control-next {
+    display: none;
+  }
+  
+  .controller .mobile .carousel-control-prev, .carousel-control-next {
+    /* background-color: red; */
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  main .main-content {
+    display: flex;
+    position: absolute;
+    /* background-color: rebeccapurple; */
+    top:0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    z-index: 98;
+    color: whitesmoke;
+  }
+}
